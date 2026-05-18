@@ -10,9 +10,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: expo/expo-github-action@v8
+      - name: Setup Expo
+        uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
-      - run: npm install --legacy-peer-deps
-      - run: npx eas build --platform android --profile preview --non-interactive
+          packager: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Build APK
+        run: npx eas build --platform android --profile preview --non-interactive
