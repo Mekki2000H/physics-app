@@ -5,6 +5,11 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "backgroundColor": "#000000",
+    "extra": {
+      "eas": {
+        "projectId": "6fea0523-49c1-43b1-bd44-5eeb3b5a2341"
+      }
+    },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#000000"
