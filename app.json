@@ -15,7 +15,6 @@
         "backgroundColor": "#000000"
       },
       "package": "com.physicsbac.app"
-    },
-    "plugins": ["expo-linear-gradient"]
+    }
   }
 }
